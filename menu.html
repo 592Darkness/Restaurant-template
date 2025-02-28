@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Tasty Curry</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Tasty Curry</div>
+    <div class="tagline">Authentic Guyanese Cuisine</div>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="cart.html">Cart <span class="cart-count" style="display: none; background-color: #FFD700; color: #8B0000; border-radius: 50%; width: 20px; height: 20px; font-size: 12px; align-items: center; justify-content: center; margin-left: 5px;"></span></a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <div class="container">
+    <section id="menu">
+      <h2>Our Menu</h2>
+      
+      <div class="menu-category">
+        <h3 class="category-title">Appetizers</h3>
+        <div class="menu-container">
+          <div class="menu-item">
+            <div class="menu-img" style="background-color: #e5a87d;"></div>
+            <div class="menu-info">
+              <div class="menu-title">Pholourie</div>
+              <div class="menu-desc">Deep-fried split pea flour balls served with tamarind sauce</div>
+              <div class="menu-price">G$800</div>
+              <button class="add-to-cart" data-name="Pholourie" data-price="800">Add to Cart</button>
+            </div>
+          </div>
+          
+          <div class="menu-item">
+            <div class="menu-img" style="background-color: #d1a980;"></div>
+            <div class="menu-info">
+              <div class="menu-title">Plantain Chips</div>
+              <div class="menu-desc">Crispy fried plantain chips with spicy pepper sauce</div>
+              <div class="menu-price">G$600</div>
+              <button class="add-to-cart" data-name="Plantain Chips" data-price="600">Add to Cart</button>
+            </div>
+          </div>
+          
+          <div class="menu-item">
+            <div class="menu-img" style="background-color: #ecd2a7;"></div>
+            <div class="menu-info">
+              <div class="menu-title">Cassava Balls</div>
+              <div class="menu-desc">Fried cassava balls with a spicy filling</div>
+              <div class="menu-price">G$750</div>
+              <button class="add-to-cart" data-name="Cassava Balls" data-price="750">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="menu-category">
+        <h3 class="category-title">Main Courses</h3>
+        <div class="menu-container">
+          <div class="menu-item">
+            <div class="menu-img" style="background-color: #c97c5d;"></div>
+            <div class="menu-info">
+              <div class="menu-title">Chicken Curry</div>
+              <div class="menu-desc">Traditional Guyanese chicken curry with potatoes</div>
+              <div class="menu-price">G$2200</div>
+              <button class="add-to-cart" data-name="Chicken Curry" data-price="2200">Add to Cart</button>
+            </div>
+          </div>
+          
+          <div class="menu-item">
+            <div class="menu-img" style="background-color: #7c3c21;"></div>
+            <div class="menu-info">
+              <div class="menu-title">Goat Curry</div>
+              <div class="menu-desc">Slow-cooked goat curry with our special blend of spices</div>
+              <div class="menu-price">G$2500</div>
+              <button class="add-to-cart" data-name="Goat Curry" data-price="2500">Add to Cart</button>
+            </div>
+          </div>
+          
+          <div class="menu-item">
+            <div class="menu-img" style="background-color: #a86f4f;"></div>
+            <div class="menu-info">
+              <div class="menu-title">Vegetable Curry</div>
+              <div class="menu-desc">Mixed vegetables in a rich curry sauce</div>
+              <div class="menu-price">G$1800</div>
+              <button class="add-to-cart" data-name="Vegetable Curry" data-price="1800">Add to Cart</button>
+            </div>
+          </div>
+          
+          <div class="menu-item">
+            <div class="menu-img" style="background-color: #c6b088;"></div>
+            <div class="menu-info">
+              <div class="menu-title">Cook-up Rice</div>
+              <div class="menu-desc">Rice cooked with black-eye peas, coconut milk, and choice of meat</div>
+              <div class="menu-price">G$1900</div>
+              <button class="add-to-cart" data-name="Cook-up Rice" data-price="1900">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="menu-category">
+        <h3 class="category-title">Sides</h3>
+        <div class="menu-container">
+          <div class="menu-item">
+            <div class="menu-img" style="background-color: #f5f5dc;"></div>
+            <div class="menu-info">
+              <div class="menu-title">Roti</div>
+              <div class="menu-desc">Traditional flatbread, perfect for scooping curry</div>
+              <div class="menu-price">G$350</div>
+              <button class="add-to-cart" data-name="Roti" data-price="350">Add to Cart</button>
+            </div>
+          </div>
+          
+          <div class="menu-item">
+            <div class="menu-img" style="background-color: #ffffe0;"></div>
+            <div class="menu-info">
+              <div class="menu-title">Rice</div>
+              <div class="menu-desc">Steamed white rice</div>
+              <div class="menu-price">G$300</div>
+              <button class="add-to-cart" data-name="Rice" data-price="300">Add to Cart</button>
+            </div>
+          </div>
+          
+          <div class="menu-item">
+            <div class="menu-img" style="background-color: #daa520;"></div>
+            <div class="menu-info">
+              <div class="menu-title">Fried Plantains</div>
+              <div class="menu-desc">Sweet ripe plantains, pan-fried</div>
+              <div class="menu-price">G$500</div>
+              <button class="add-to-cart" data-name="Fried Plantains" data-price="500">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="menu-category">
+        <h3 class="category-title">Beverages</h3>
+        <div class="menu-container">
+          <div class="menu-item">
+            <div class="menu-img" style="background-color: #cd853f;"></div>
+            <div class="menu-info">
+              <div class="menu-title">Mauby</div>
+              <div class="menu-desc">Traditional Caribbean drink made from tree bark</div>
+              <div class="menu-price">G$400</div>
+              <button class="add-to-cart" data-name="Mauby" data-price="400">Add to Cart</button>
+            </div>
+          </div>
+          
+          <div class="menu-item">
+            <div class="menu-img" style="background-color: #ff6347;"></div>
+            <div class="menu-info">
+              <div class="menu-title">Sorrel Drink</div>
+              <div class="menu-desc">Refreshing hibiscus flower drink with spices</div>
+              <div class="menu-price">G$450</div>
+              <button class="add-to-cart" data-name="Sorrel Drink" data-price="450">Add to Cart</button>
+            </div>
+          </div>
+          
+          <div class="menu-item">
+            <div class="menu-img" style="background-color: #228b22;"></div>
+            <div class="menu-info">
+              <div class="menu-title">Lime Juice</div>
+              <div class="menu-desc">Fresh squeezed lime juice with sugar</div>
+              <div class="menu-price">G$350</div>
+              <button class="add-to-cart" data-name="Lime Juice" data-price="350">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  <footer>
+    <div class="footer-info">
+      <div class="footer-col">
+        <h3>Tasty Curry</h3>
+        <p>Authentic Guyanese Cuisine</p>
+        <p>Established 2015</p>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Visit Us</h3>
+        <p>42 Main Street</p>
+        <p>Georgetown, Guyana</p>
+        <p>+592-123-4567</p>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Opening Hours</h3>
+        <p>Monday - Saturday: 11am - 10pm</p>
+        <p>Sunday: 12pm - 8pm</p>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      &copy; 2025 Tasty Curry. All Rights Reserved.
+    </div>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>

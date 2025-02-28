@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Tasty Curry</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Tasty Curry</div>
+    <div class="tagline">Authentic Guyanese Cuisine</div>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="cart.html">Cart <span class="cart-count" style="display: none; background-color: #FFD700; color: #8B0000; border-radius: 50%; width: 20px; height: 20px; font-size: 12px; align-items: center; justify-content: center; margin-left: 5px;"></span></a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <div class="container">
+    <section class="contact-section">
+      <h2>Contact Us</h2>
+      
+      <div class="contact-details">
+        <p><strong>Address:</strong> 42 Main Street, Georgetown, Guyana</p>
+        <p><strong>Phone:</strong> +592-123-4567</p>
+        <p><strong>Email:</strong> info@tastycurry.gy</p>
+        <p><strong>Hours:</strong> Monday - Saturday: 11am - 10pm, Sunday: 12pm - 8pm</p>
+      </div>
+      
+      <div style="margin: 40px 0; text-align: center;">
+        <h3 style="color: #8B0000; margin-bottom: 20px;">Location</h3>
+        <div style="width: 100%; height: 300px; background-color: #eee; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #888;">
+          Map would be displayed here
+        </div>
+      </div>
+      
+      <h3 style="color: #8B0000; margin: 30px 0 20px; text-align: center;">Send Us a Message</h3>
+      
+      <div class="contact-form">
+        <form id="contactForm" onsubmit="return false;">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+          </div>
+          
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What is your message about?" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Enter your message here" required style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; resize: vertical;"></textarea>
+          </div>
+          
+          <button type="submit" style="background-color: #8B0000; color: white; border: none; padding: 12px; width: 100%; font-size: 1.1rem; border-radius: 4px; cursor: pointer; font-weight: bold; margin-top: 10px;">Send Message</button>
+        </form>
+      </div>
+      
+      <div style="margin-top: 40px;">
+        <h3 style="color: #8B0000; margin-bottom: 20px; text-align: center;">Reservations</h3>
+        <p style="text-align: center; margin-bottom: 20px;">
+          For reservations, please call us at +592-123-4567 or use the form above to request a reservation.
+          We recommend booking at least 24 hours in advance, especially for weekend dining.
+        </p>
+      </div>
+    </section>
+  </div>
+  
+  <footer>
+    <div class="footer-info">
+      <div class="footer-col">
+        <h3>Tasty Curry</h3>
+        <p>Authentic Guyanese Cuisine</p>
+        <p>Established 2015</p>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Visit Us</h3>
+        <p>42 Main Street</p>
+        <p>Georgetown, Guyana</p>
+        <p>+592-123-4567</p>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Opening Hours</h3>
+        <p>Monday - Saturday: 11am - 10pm</p>
+        <p>Sunday: 12pm - 8pm</p>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      &copy; 2025 Tasty Curry. All Rights Reserved.
+    </div>
+  </footer>
+  
+  <script src="script.js"></script>
+  <script>
+    // Contact form submission handler
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // In a real application, you would send the form data to a server
+      // For demonstration purposes, we'll show a success message
+      alert('Thank you for your message! We will get back to you shortly.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
